@@ -48,7 +48,7 @@
 
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/500x400/?code,php" alt="Unable to lode image">
+                        <img src="img/Shramana.jpg" height="300px"alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Shramana</h5>
                             <p class="card-text">Here is some thing inside the card Shramana Please check it out.....</p>
@@ -58,7 +58,7 @@
                 </div>
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/500x400/?code,C" alt="Unable to lode image">
+                        <img src="img/Sruti.jpeg" height="300px" alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Sruti</h5>
                             <p class="card-text">Here is some thing inside the card Sruti Please check it out.....</p>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/500x400/?code,C++" alt="Unable to lode image">
+                        <img src="img/Nilesh.jpg" height="300px" alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Nilesh</h5>
                             <p class="card-text">Here is some thing inside the card Nilesh Please check it out.....</p>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/500x400/?code,C++" alt="Unable to lode image">
+                        <img src="img/Rush.jpg" height="350px" alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Rush</h5>
                             <p class="card-text">Here is some thing inside the card Rush Please check it out.....</p>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://source.unsplash.com/500x400/?code,C++" alt="Unable to lode image">
+                        <img src="img/Kushal.jpg"  height="350px" alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Kushal</h5>
                             <p class="card-text">Here is some thing inside the card Kushal Please check it out.....</p>
