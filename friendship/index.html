@@ -14,7 +14,37 @@
 </head>
 
 <body>
-    <?php require "partial/header.php" ?>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">friendship_day</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/friendship">Home</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Sruti.html">Sruti</a></li>
+            <li><a class="dropdown-item" href="Shramana.html">Shramana</a></li>
+            <li><a class="dropdown-item" href="Nilesh.html">Nilesh</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -48,51 +78,51 @@
 
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/Shramana.jpg" height="300px"alt="Unable to lode image">
+                        <img src="Shramana.jpg" height="300px"alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Shramana</h5>
                             <p class="card-text">Here is some thing inside the card Shramana Please check it out.....</p>
-                            <a href="Shramana.php" class="btn btn-primary">View</a>
+                            <a href="Shramana.html" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/Sruti.jpeg" height="300px" alt="Unable to lode image">
+                        <img src="sruti.jpeg" height="300px" alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Sruti</h5>
                             <p class="card-text">Here is some thing inside the card Sruti Please check it out.....</p>
-                            <a href="Sruti.php" class="btn btn-primary">View</a>
+                            <a href="Sruti.html" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/Nilesh.jpg" height="300px" alt="Unable to lode image">
+                        <img src="Nilesh.jpg" height="300px" alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Nilesh</h5>
                             <p class="card-text">Here is some thing inside the card Nilesh Please check it out.....</p>
-                            <a href="Nilesh.php" class="btn btn-primary">View</a>
+                            <a href="Nilesh.html" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/Rush.jpg" height="350px" alt="Unable to lode image">
+                        <img src="rush.jpg" height="350px" alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Rush</h5>
                             <p class="card-text">Here is some thing inside the card Rush Please check it out.....</p>
-                            <a href="Rush.php" class="btn btn-primary">View</a>
+                            <a href="Rush.html" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 my-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="img/Kushal.jpg"  height="350px" alt="Unable to lode image">
+                        <img src="kushal.jpg"  height="350px" alt="Unable to lode image">
                         <div class="card-body">
                             <h5 class="card-title">Kushal</h5>
                             <p class="card-text">Here is some thing inside the card Kushal Please check it out.....</p>
-                            <a href="Kushal.php" class="btn btn-primary">View</a>
+                            <a href="Kushal.html" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +130,11 @@
             </div>
             </div>
 
-            <?php require "partial/footer.php"?>
+            <div class="contener-fluid bg-dark text-light ">
+<p class="text-center py-3 mb-0"> © copyright Friendship  <?php $date =date("Y");echo"2020-". $date; ?> 
+|| All right reserved <br>Virtual world's Production</p>
+
+</div>
        
 
         <!-- Optional JavaScript; choose one of the two! -->
