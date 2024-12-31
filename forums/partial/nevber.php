@@ -16,7 +16,7 @@
 #navbar {
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 99;
 }
 </style>
 <?php

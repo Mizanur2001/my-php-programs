@@ -87,17 +87,26 @@ if (isset($_GET['login']) && $_GET['login']=="true") {
                     aria-label="Slide 3"></button>
             </div>
             <?php
+            #check the random number is repeated or not
+            $random1 = rand(1, 8);
+            $random2 = rand(1, 8);
+            $random3 = rand(1, 8);
+            while ($random1 == $random2 || $random1 == $random3 || $random2 == $random3) {
+                $random1 = rand(1, 8);
+                $random2 = rand(1, 8);
+                $random3 = rand(1, 8);
+            }
             echo
                 '<div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/slider'.rand(1, 8).'.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/slider'.$random1.'.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/slider'.rand(1, 8).'.jpg" class="d-block w-100"
+                        <img src="./img/slider'.$random2.'.jpg" class="d-block w-100"
                             alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/slider'.rand(1, 8).'.jpg" class="d-block w-100" alt="...">
+                        <img src="./img/slider'.$random3.'.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>'
             ?>
