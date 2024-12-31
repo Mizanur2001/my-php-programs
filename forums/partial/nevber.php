@@ -35,7 +35,7 @@ echo
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contact.php?">Contact Us</a>
+                    <a class="nav-link" href="/forums/contact.php?">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -64,7 +64,7 @@ echo
                 <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search" id="search">
                 <button class="btn btn-success me-2" type="submit">Search</button>
               </form>
-            <form class="d-frex my-2" action="/logout.php">
+            <form class="d-frex my-2" action="/forums/logout.php">
                 <button class="btn btn-outline-danger" type="submit" id="logout">Logout</button>
             </form>
             <p class="text-warning my-0 mx-2"> Welcome '. $_SESSION['user_name'] .' </p>';
@@ -77,11 +77,11 @@ echo
                     <button class="btn btn-success me-2" type="submit">Search</button>
                 </form>
     
-                <form class="d-frex" action="/login.php">
+                <form class="d-frex" action="/forums/login.php">
                     <button class="btn btn-outline-success me-2" type="submit" id="login">Login</button>
     
                 </form>
-                <form class="d-frex" action="/singup.php">
+                <form class="d-frex" action="/forums/singup.php">
                     <button class="btn btn-outline-success me-2" type="submit" id="SingUp">Sign Up</button>
     
                 </form>';
