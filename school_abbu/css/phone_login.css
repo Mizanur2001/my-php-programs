@@ -1,0 +1,11 @@
+/* Resizeing form-group */
+
+#form-group {
+    width: 315px;
+}
+
+/*For button*/
+
+.btn{
+    padding: 12px 110px;
+}

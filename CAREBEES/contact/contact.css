@@ -1,0 +1,127 @@
+@font-face{
+    font-family: carebees-header;
+    src: url('../fontstyle/Inder-Regular.ttf');
+}
+@font-face{
+    font-family: carebees-fira;
+    src: url('../fontstyle/FiraSans-Regular.ttf');
+}
+.contact-us{
+    position: relative;
+}
+
+.form-title{
+    padding: 1px 0px;
+}
+.form-title p{
+    font-size: 30px;
+    font-family: carebees-fira;
+    color: #fc037f;
+    text-align: center;
+}
+
+.form-title .line{
+    border: 1.4px solid #4A7CFE;
+    position: relative;
+    bottom: 26px;
+    width: 150px;
+    left: 44%;
+}
+
+.left-right{
+    display: flex;
+    position: relative;
+    bottom: 3px;
+}
+.left{
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 8%;
+    top: 120%;
+    padding: 20px;
+}
+.left .left-next{
+    display: flex;
+    font-family: carebees-header;
+}
+.left2{
+    margin-top: 40px;
+}
+.left3{
+    margin-top: 40px;
+}
+.left-next i{
+    background-color: #FB0087;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.left3 i{
+    width: 15px;
+    text-align: center;
+}
+.left-next a{
+    text-decoration: none;
+    color: black;
+}
+.left-next .text{
+    margin-left: 10px;
+}
+
+.right{
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 8%;
+    top: 120%;
+    padding: 20px;
+}
+
+.right input{
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    border: none;
+    /* box-shadow: 0px 0px 30px #FB0087; */
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    outline: none;
+    font-family: carebees-header;
+}
+
+.right .fname{
+    width: 515px;
+}
+.right .phn{
+    width: 238.5px;
+}
+.right .mailid{
+    width: 238.5px;
+    margin-left: 15px;
+}
+.right .sbj{
+    width: 515px;
+}
+
+.right textarea{
+    border: none;
+    background-color: #F1F1F1;
+    padding: 6px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.right .btn{
+    padding: 10px 10px;
+    margin-top: 5px;
+    border: none;
+    background-color: #FB0087;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.right .btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #FB0087;
+    border-radius: 10px;
+}
+

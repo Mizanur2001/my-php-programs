@@ -1,0 +1,6 @@
+/* Navbar Section (When weight is :- 460)*/
+
+#navbar ul li a {
+    margin: 9px;
+    font-size: 14px;
+}

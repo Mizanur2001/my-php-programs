@@ -1,0 +1,54 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Container sectrion */
+
+.container{
+    margin: 10px;
+    overflow: auto;
+}
+
+
+/* Table section */
+
+table#myTable {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#table table{
+    border: 2px solid black;
+}
+
+#table th,tr,td{
+    border: 2px solid black;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 8px 10px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.t-btn{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ca3939;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+
+}
+
+/* Utility classes */
+
+.center{
+    text-align: center;
+}

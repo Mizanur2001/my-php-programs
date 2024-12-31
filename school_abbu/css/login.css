@@ -1,0 +1,69 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*container section*/
+
+#container{
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form-group{
+    border: 2px solid #872aa5;
+    box-shadow: 3px 3px #872aa5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:500px ;
+    margin-top: 50px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    background-color: beige;
+}
+
+#container::before{
+    content: "";
+    background: url("../img/login.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 680px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#container input{
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+#container label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.2rem; 
+}
+.btn{
+    font-family: 'Bree Serif', serif;
+    background-color: #872aa5;
+    padding: 14px 180px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.img_gof{
+    margin-top: 20px;
+}
+#login_img{
+    margin-top: 10px;
+}

@@ -1,0 +1,409 @@
+/* Inder , jungy fonts and mixed fonts are used */
+@font-face {
+    font-family: carebees-header;
+    src: url('../fontstyle/Inder-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+.header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px -12px 7px 11px #00000040;
+    background-color: #ffffff;
+}
+
+/* CSS for left box */
+.lefts {
+    display: inline-block;
+    position: absolute;
+    left: 3%;
+    top: 2%;
+    /* height: 205px; */
+}
+
+.lefts img {
+    width: 187px;
+    /* height: 192px; */
+    /* margin-left: 20px; */
+}
+
+/* CSS for middle box */
+.middle {
+    display: block;
+    width: 44%;
+    position: relative;
+    top: 3px;
+    right: -7%;
+    margin: auto;
+    font-family: carebees-header;
+}
+
+.list {
+    display: inline-block;
+}
+
+.list li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.list li a:hover {
+    color: #4A7CFE;
+}
+
+.list li a {
+    text-decoration: none;
+    padding: 41px;
+    color: black;
+}
+
+
+/* CSS for right box */
+.rights {
+    display: flex;
+    position: absolute;
+    right: -16%;
+    top: 25px;
+}
+
+.dropbtn {
+    cursor: pointer;
+    padding: 4%;
+    background-color: #fc037f;
+    color: white;
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: carebees-header;
+    font-size: 15px;
+
+}
+
+/* Dropdown for contact Us */
+.dropdown {
+    position: relative;
+    right: 60%;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+    font-family: carebees-header;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 10px;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #FFE6F4;
+}
+
+.dropdown-content .whatsapp {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.dropdown-content .appointment {
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* CSS for get-in-touch button */
+.call a {
+    border: none;
+    padding: 3.5%;
+    color: white;
+    background-color: #fc037f;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.call {
+    width: 342px;
+    position: relative;
+    top: 11px;
+    right: -15px;
+}
+
+
+
+/* Dropdown for services */
+.list li .drop-services {
+    position: relative;
+    right: -3%;
+    display: inline-block;
+}
+
+.list li .service-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 412px;
+    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    border-radius: 0px 10px 10px 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.list li .service-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    height: 79px;
+    width: 71px;
+}
+
+.list li .service-content a .img1 {
+    width: 39px;
+}
+
+.list li .service-content a .img2 {
+    width: 48px;
+}
+
+.list li .service-content a .img3 {
+    width: 53px;
+}
+
+.list li .service-content a .img4 {
+    width: 40px;
+}
+
+.list li .service-content a .img5 {
+    width: 40px;
+}
+
+.list li .service-content a .img6 {
+    width: 40px;
+}
+
+.list li .service-content a .img7 {
+    width: 39px;
+}
+
+.list li .service-content a span {
+    align-items: center;
+}
+
+/* Change color of dropdown links on hover */
+.list li .service-content a:hover {
+    background-color: #FFE6F4;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.list li .service-content .cntnt1 a:hover {
+    background-color: #FFE6F4;
+    border-radius: 0px 10px 10px 10px;
+}
+
+/* Show the dropdown menu on hover */
+.list li .drop-services:hover .service-content {
+    display: flex;
+}
+
+.servicebtn {
+    cursor: pointer;
+    border: none;
+    font-family: carebees-header;
+    background-color: white;
+    font-size: 14px;
+    padding: 20px 0px;
+}
+
+.servicebtn:hover {
+    color: #4A7CFE;
+}
+
+.list li .about {
+    position: relative;
+    left: -26%;
+}
+
+.menuclick {
+    display: none;
+}
+
+.navwhatsapp {
+    display: none;
+}
+.menucut{
+    display: none;
+}
+
+/* #######################################################
+    Media Query
+    #######################################################*/
+@media screen and (min-width:300px) and (max-width:430px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+
+    .lefts {
+        width: 45vw;
+        /* border: 2px solid black; */
+        margin-left: 49px;
+    }
+
+    .lefts a img {
+        width: 155px;
+    }
+
+    .rights {
+        /* border: 2px solid green; */
+        position: absolute;
+        width: 37vw;
+        height: auto;
+        margin-right: 100px;
+    }
+
+    .menuclick {
+        /* border: 2px solid red; */
+        z-index: 1;
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 18px;
+    }
+    .menuclick button{
+        background-color: transparent;
+        border: none;
+    }
+
+    .menuclick i {
+        font-size: 45px;
+        color: #fc037f;
+    }
+
+    .menucut {
+        /* border: 2px solid red; */
+        z-index: 1;
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 18px;
+        display: none;
+    }
+    .menucut button{
+        background-color: transparent;
+        border: none;
+    }
+
+    .menucut i {
+        font-size: 45px;
+        color: #fc037f;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .call {
+        /* border: 4px solid blue; */
+        width: 54px;
+        height: 38px;
+        position: relative;
+        right: -35px;
+        top: -4px;
+    }
+
+    .call a {
+        border-radius: 0px;
+        background-color: transparent;
+
+    }
+
+    .call a i {
+        color: #fc037f;
+        font-size: 35px;
+    }
+
+    .navwhatsapp {
+        display: block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 112px;
+        top: -10px;
+    }
+
+    .navwhatsapp i {
+        font-size: 47px;
+        color: #fc037f;
+    }
+
+    .middle {
+        /* border: 2px solid red; */
+        position: absolute;
+        left: -222px;
+        top: 75px;
+        display: none;
+        background-color: white;
+        width: 60vw;
+        height: 100vh;
+    }
+
+    .middle .list {
+        text-align: center;
+        /* justify-content: center; */
+        position: relative;
+        left: 25px;
+    }
+
+    .middle .list li {
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .middle .list li a {
+        padding: 0px 0px;
+    }
+
+    .middle .list li #navMobile {
+        left: 0px;
+        top: 18px;
+    }
+
+    .middle .list li .drop-services .service-content {
+        position: absolute;
+        left: -60px;
+        width: 178px;
+    }
+
+    .list li .drop-services:hover .service-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list li .drop-services:hover .service-content a {
+        padding: 10px 2px;
+    }
+}

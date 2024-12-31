@@ -1,9 +1,30 @@
+<style>
+#search{
+    border-radius: 20px;
+}
+#singup {
+    margin: 5px;
+}
+#login {
+    margin: 5px;
+    margin-top: 8px;
+}
+#logout{
+    margin-left: 9px;
+    margin-right: 8px;
+}
+#navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+</style>
 <?php
 session_start();
 echo 
-'<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+'<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" href="about.php"><img src="img/logo2.png" height="40px" alt=""></a>
+        <a class="navbar-brand" href="about.php"><img src="img/logo_vw.png" height="40px" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -14,7 +35,7 @@ echo
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/forums/contact.php?">Contact Us</a>
+                    <a class="nav-link" href="/contact.php?">Contact Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -40,11 +61,11 @@ echo
             if (isset($_SESSION['loggedin'])&& $_SESSION['loggedin']==true) {
           echo
             ' <form class="d-flex" action="search.php" method="get" >
-                <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search" id="search">
                 <button class="btn btn-success me-2" type="submit">Search</button>
               </form>
-            <form class="d-frex my-2" action="/forums/logout.php">
-                <button class="btn btn-outline-danger" type="submit">Logout</button>
+            <form class="d-frex my-2" action="/logout.php">
+                <button class="btn btn-outline-danger" type="submit" id="logout">Logout</button>
             </form>
             <p class="text-warning my-0 mx-2"> Welcome '. $_SESSION['user_name'] .' </p>';
             }
@@ -52,16 +73,16 @@ echo
          else{
                 echo    
                 '<form class="d-flex" action="search.php" method="get">
-                    <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search" id="search">
                     <button class="btn btn-success me-2" type="submit">Search</button>
                 </form>
     
-                <form class="d-frex" action="/forums/login.php">
-                    <button class="btn btn-outline-success me-2" type="submit">Login</button>
+                <form class="d-frex" action="/login.php">
+                    <button class="btn btn-outline-success me-2" type="submit" id="login">Login</button>
     
                 </form>
-                <form class="d-frex" action="/forums/singup.php">
-                    <button class="btn btn-outline-success me-2" type="submit">SingUp</button>
+                <form class="d-frex" action="/singup.php">
+                    <button class="btn btn-outline-success me-2" type="submit" id="SingUp">Sign Up</button>
     
                 </form>';
                 }

@@ -9,40 +9,48 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-
+    <link rel="icon" type="image/x-icon" href="img/logo_vw.ico">
     <title>Welcome to Virtual World forums</title>
-    
+    <style>
+        .container-center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card{
+            box-shadow: 6px 6px 20px rgb(122 75 90 / 60%);
+            border-radius: 10px;
+            border: 0px solid rgba(0,0,0,.125);
+        }
+        .cardImg{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .btn-primary{
+            background: linear-gradient( to right bottom, rgba(173 , 60 , 170), rgb(107 117 221));
+            border-color: #ffffff;;
+        }
+    </style>
 </head>
 
 <body>
     <?php require "partial/dbconnect.php";?>
 
     <?php require "partial/nevber.php"?>
-    <?php
-
-if (isset($_GET['singup']) && $_GET['singup']=="true") {
-    echo 
-   '<div class="alert alert-success alert-dismissible fade show my-0" role="alert">
-       <strong>Success! </strong> You can Login now...
-       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div>';
-}
-
-
-?>
   
   <?php
 
-  if (isset($_GET['logout']) && $_GET['logout']=="true") {
+  if (isset($_GET['singup']) && $_GET['singup']=="true") {
       echo 
      '<div class="alert alert-success alert-dismissible fade show my-0" role="alert">
-         <strong>Success!</strong> Successfully logout...
+         <strong>success!</strong> You can login now
          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>';
   }
   
   
   ?>
+
    <?php
 
 if (isset($_GET['login']) && $_GET['login']=="true") {
@@ -55,8 +63,18 @@ if (isset($_GET['login']) && $_GET['login']=="true") {
 
 
 ?>
+ <?php
 
-
+  if (isset($_GET['logout']) && $_GET['logout']=="true") {
+      echo 
+     '<div class="alert alert-success alert-dismissible fade show my-0" role="alert">
+         <strong>Success!</strong> Successfully logout...
+         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>';
+  }
+  
+  
+  ?>
 
     <div class="contener">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -68,18 +86,21 @@ if (isset($_GET['login']) && $_GET['login']=="true") {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://source.unsplash.com/1600x500/?apple,code" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://source.unsplash.com/1600x500/?programmers,microsoft" class="d-block w-100"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://source.unsplash.com/1600x500/?codding,apple" class="d-block w-100" alt="...">
-                </div>
-            </div>
+            <?php
+            echo
+                '<div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slider'.rand(1, 8).'.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slider'.rand(1, 8).'.jpg" class="d-block w-100"
+                            alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slider'.rand(1, 8).'.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>'
+            ?>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -108,10 +129,11 @@ if (isset($_GET['login']) && $_GET['login']=="true") {
           $name= $row['category_name'];
           $description =$row['category_description'];
           $id=$row['category_id'];
+          $img_URL=$row['category_URL'];
          echo 
-         '<div class="col-md-4 my-3" >
+         '<div class="container-center col-md-4 my-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://source.unsplash.com/500x400/?code,'.$name .' class="card-img-top" alt="...">
+                    <img class ="cardImg" src='.$img_URL.' class="card-img-top" alt="'.$name.' image logo">
                     <div class="card-body">
                         <h5 class="card-title">'.$name .'</h5>
                         <p class="card-text">'.substr($description,0,80).'......</p>

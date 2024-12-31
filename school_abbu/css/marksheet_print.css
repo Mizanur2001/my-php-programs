@@ -1,0 +1,98 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* container & box */ 
+
+#container{
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(600px ,1fr));
+    margin: 1px;
+    overflow: auto;
+}
+.box {
+    display: grid;
+    justify-content: center;
+    border: 3px solid brown;
+    background-color: rgb(226 195 225 / 16%);
+    height: 970px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Bree Serif', serif;
+}
+
+.box img{
+    height: 225px;
+    width: 271px;
+}
+.heading{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*h1 in heading Section*/
+
+.heading h1{
+    padding-bottom: 10px;
+}
+
+/* Img in heading Section */
+
+.heading img{
+    height: 75px;
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+/*h2 in heading section */
+
+.heading h2{
+    margin-top: 6px;
+}
+
+/* Table section */
+
+table.myTable {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table table{
+    border: 2px solid black;
+    margin-top: 15px;
+}
+
+.table th,tr,td{
+    border: 2px solid black;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 8px 10px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Sign Section */
+
+.sign{
+    display: flex;
+}
+.sign p{
+    display: flex;
+    margin: 40px 40px 0px;
+}
+
+/*Utility classes */
+
+.mt-20{
+    margin-top: 30px;
+    margin-right: 51px;
+    float: right;
+}

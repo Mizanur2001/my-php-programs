@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inder&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">');
+
+/* * {
+    padding: 0;
+    margin: 0;
+}  */
+
+/* Welcome Section */
+.welcpage{
+    position: relative;
+    top: -100px;
+}
+
+.welcome h1 {
+    font-family: 'Inika';
+    background: url(../image/bgimg.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 153px;
+    font-weight: 700;
+    line-height: 261px;
+    letter-spacing: 0em;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.10);
+}
+
+.welcome p {
+    font-family: 'Inder';
+    font-size: 67px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0297DB;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    margin-top: 150px;
+}
+
+.container1 {
+    position: relative;
+    width: 90%;
+    height: 0px;
+    top: 0px;
+    right: -45px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.rectangle2 {
+    background-color: #FB0087;
+    top: 20px;
+    right: 20px;
+    
+}
+
+.rectangle1 {
+    background-color: #4A7CFE;
+    top: 43px;
+    right: 3px;
+    
+}
+
+
+.container2 {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    top: 37px;
+    left: 131px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.rectangle4 {
+    background-color: #FB0087;
+    top: 0px;
+    left: 49px;
+}
+
+.rectangle3 {
+    background-color: #4A7CFE;
+    top: 21px;
+    left: 70px;
+    
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    margin-top: 159px;
+
+}
+
+.rectangle5 {
+    width: 50%;
+    height: 54px;
+    display: inline-block;
+    background-color: #4A7CFE;
+    box-sizing: border-box;
+}
+
+.rectangle6 {
+    width: 50%;
+    height: 54px;
+    display: inline-block;
+    background-color: #FB0087;
+    box-sizing: border-box;
+}
+
+/* 2nd part   */
+
+.commitment-topic{
+    position: relative;
+    bottom: 100px;
+    border: none;
+}
+.commitment-topic h3 {
+    width: 1229px;
+    height: 60px;
+    top: 31px;
+    left: 343px;
+    font-family: 'Inder';
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #0085CA;
+    margin-top: 33px;
+}
+
+.commitment {
+    padding: 1.5rem;
+    height: 475px;
+    background-color: #D4E0FF;
+    transition: all 0.5s ease-in-out;
+    width: 1216px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ .commitment-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 301px;
+    margin-right: 819px;
+} 
+
+.commitment-img img {
+    width: 426px;
+    height: 396px;
+    margin-top: auto; 
+    object-fit: contain;
+}
+
+.rectangle7 {
+    height: 127px;
+    width: 315px;
+    border-radius: 0px;
+    background-color: #4A7CFE;
+    text-align: center;
+    top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle7 p {
+   
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 38px;
+}
+
+.commitment-test {
+    width: 745px;
+    height: 440px;
+    top: 414px;
+    left: 661px;
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: justify;
+    margin-left: 446px;
+    margin-top: -485px;
+
+}
+
+/* 3rd part  */
+.mission {
+    padding: 1.5rem;
+    height: 783px;
+    background-color: #FFE6F4;
+    transition: all 0.5s ease-in-out;
+    width: 1216px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: 35px;
+}
+
+
+
+.mission-test {
+    width: 1265px;
+    height: 742px;
+    top: 10px;
+    left: 10px;
+    font-family: 'Fira Sans';
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: justify;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35px;
+    display: flex;
+    /* margin-right: -350px; */
+   
+}
+
+.mission-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 697px;
+    /* height: 500px; */
+    /* margin-right: -10px; */
+    position: relative;
+    bottom: 0px;
+} 
+
+.mission-img img {
+    width: 359px;
+    height: 632px;
+    /* margin-top: auto;  */
+    /* object-fit: contain; */
+    align-items: center;
+    
+}
+
+.rectangle8 {
+    /* height: 200px; */
+    width: 359px;
+    border-radius: 0px;
+    background-color: #FB0087;
+    text-align: center;
+    top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rectangle8 p{
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 45px;
+}
+/* 4th part */
+.health{
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+.healthcare {
+    border-radius: 86px 86px 0 0;
+    background-color: rgba(212, 224, 255, 1);
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    display: flex;
+    /* height: 1450px; */
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25) inset;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 65px 0px;
+}
+
+.rectangle9 {
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #4A7CFE;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+.rectangle9 h1{
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 40px;
+    font-weight: 400;
+    
+}
+
+.outer-p p {
+    top: 47px;
+    left: -60px;
+    font-family: 'Fira Sans';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 766px;
+    width: 70%;
+    margin-left: 191px;
+    margin-top: 20px;
+}
+.healthcare-team{
+    border-radius: 6.9rem;
+    background-color: #FFE6F4;
+    transition: all 0.5s ease-in-out;
+    width: 75%;
+    display: flex;
+    height: 971px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -608px;
+}
+.rectangle10{
+    width: 300px;
+    height: 140px;
+    border-radius: 40px;
+    background-color:  #FB0087;
+    display: inline-block;
+    position: absolute;
+    top: 327px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+.rectangle10 h1{
+    color: white;
+    font-family: 'Fira Sans';
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+
+}
+.inner-p p{
+    top: 47px;
+    left: -60px;
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 868px;
+    width: 88%;
+    margin-left: 59px;
+    margin-top: 929px;
+    text-align: justify;
+}
+
+/* Navbar Wrapper */
+.navWrapper{
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+/* Contact Wrapper */
+.contactWrapper{
+    position: relative;
+    top: -85px;
+    border: 2px solid black;
+}
+
+
+.contactWrapper .contact-us .form-title p{
+    position: relative;
+    top: 133px;
+}
+
+
+/* Footer Wrapper */
+.FooterWrapper {
+    position: relative;
+    top: 240px;
+    border: 2px solid red;
+}
+
+.FooterWrapper .footer .up .upper .line{
+    position: relative;
+}

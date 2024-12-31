@@ -1,0 +1,73 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* container section */
+
+#container{
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    margin: 30px;
+}
+.box{
+    display: grid;
+    justify-content: center;
+    border: 3px solid brown;
+    background-color: rgb(226 195 225 / 16%);
+    height: 280px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    border: 1px solid black;
+    padding: 15px;
+    margin-right: 43px;
+    border-radius: 20px;
+    background: #ca3939;
+    font-size: 17px;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Input Section */
+
+.form-group input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+    margin-bottom: 30px;
+
+}
+.form-group label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem; 
+}
+.form-group input {
+    width: 77%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* S3 Button */
+
+#s3-btn{
+    padding: 15px 25px;
+}
+
+/*Utility Classes*/
+
+.mb-80{
+    margin-bottom: 80px;
+}

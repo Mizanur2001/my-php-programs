@@ -1,0 +1,48 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Container Section */
+
+#container{
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    margin: 30px;
+    overflow: auto;
+}
+
+/* Box Section  */
+
+.box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid brown;
+    background-color: rgb(226 195 225 / 16%);
+    height: 480px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Button Section*/
+
+.btn{
+    border: 2px solid black;
+    padding: 25px;
+    margin-right: 43px;
+    border-radius: 20px;
+    background: #ca3939;
+    font-size: 17px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}
+

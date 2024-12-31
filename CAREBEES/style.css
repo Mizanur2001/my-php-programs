@@ -1,0 +1,738 @@
+/* Style for slider */
+@font-face {
+    font-family: carebees-header;
+    src: url('fontstyle/Inder-Regular.ttf');
+}
+
+@font-face {
+    font-family: carebees-jungy;
+    src: url('fontstyle/Junge-Regular.ttf');
+}
+
+@font-face {
+    font-family: carebees-DownHere;
+    src: url('fontstyle/JustMeAgain.ttf');
+}
+
+@font-face {
+    font-family: carebees-laoMuang;
+    src: url('fontstyle/LaoMuangKhong-Regular.ttf');
+}
+
+@font-face {
+    font-family: carebees-fira;
+    src: url('fontstyle/FiraSans-Regular.ttf');
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.allIndex {
+    margin-top: 15px;
+}
+
+/* CSS for slider */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.frame {
+    width: 100vw;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: all 1s ease;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    bottom: 150px;
+}
+
+.button {
+    width: 10px;
+    height: 10px;
+    border: 0.5px solid #FFE6F4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* CSS for service section */
+.services {
+    display: block;
+}
+
+.heading p {
+    font-size: 30px;
+    font-family: carebees-fira;
+    color: #fc037f;
+    text-align: center;
+}
+
+.underline1 {
+    border: 1.4px solid #4A7CFE;
+    position: relative;
+    bottom: 7%;
+    width: 160px;
+    left: 39.5%;
+}
+
+.underline2 {
+    border: 1.4px solid #4A7CFE;
+    position: relative;
+    bottom: 7%;
+    width: 104px;
+    left: 43%;
+}
+
+.allSection {
+    display: flex;
+    padding: 1% 4%;
+    margin-top: 10px;
+    /* text-align: center; */
+}
+
+.sec-1and2 {
+    display: flex;
+}
+
+.card {
+    padding: 0px 15px;
+}
+
+.sec1 {
+    padding: 0px 15px;
+    /* border: 2px solid blue; */
+}
+
+.sec1 p {
+    font-size: 16px;
+    font-family: carebees-fira;
+    padding: 10px 20px;
+    line-height: 28px;
+}
+
+.sec2 {
+    padding: 0px 15px;
+    /* border: 2px solid blue; */
+}
+
+.sec2 p {
+    font-size: 16px;
+    font-family: carebees-fira;
+    padding: 10px 20px;
+    line-height: 28px;
+}
+
+.image img {
+    width: 327px;
+    height: 200px;
+}
+
+.text1 {
+    position: relative;
+    width: 327px;
+    height: 158px;
+    background-color: #fc037f;
+    color: white;
+    padding: 10px 0px;
+    font-family: carebees-fira;
+    bottom: 2%;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+}
+
+.text2 {
+    position: relative;
+    width: 327px;
+    height: 155px;
+    background-color: #4A7CFE;
+    color: white;
+    padding: 10px 0px;
+    font-family: carebees-fira;
+    bottom: 2%;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+}
+
+.text1 span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text1 p {
+    font-size: 16px;
+    padding: 0px 30px;
+    line-height: 30px;
+}
+
+.text2 span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text2 p {
+    font-size: 16px;
+    padding: 0px 30px;
+    line-height: 30px;
+}
+
+/* CSS for all services section */
+.allServices {
+    display: flex;
+    background-color: #3D4466;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.allServiceCard {
+    display: flex;
+    transition: all 1s ease;
+    margin: 0px 13px;
+}
+
+.allServices a {
+    padding: 35px 0px;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+.imgs img {
+    width: 279px;
+    height: 229px;
+    overflow: hidden;
+    border-radius: 35px 35px 0px 0px;
+}
+
+.title {
+    position: relative;
+    bottom: 2%;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 0px 0px 35px 35px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: carebees-DownHere;
+}
+
+.arrow {
+    position: absolute;
+    top: 42%;
+    right: 10px;
+}
+
+.arrow .fa-arrow-right {
+    color: white;
+    font-size: 30px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: #FB0087;
+    box-shadow: 0px 0px 40px #FB0087;
+}
+
+.arrow .fa-arrow-right:hover {
+    transform: translateX(2px);
+    cursor: pointer;
+}
+
+.arrow .fa-arrow-left {
+    position: absolute;
+    top: 42%;
+    left: 0.5%;
+    color: white;
+    font-size: 30px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: #fc037f;
+    opacity: 0.6;
+    box-shadow: 10px 10px 10px #fc037f;
+}
+
+.points {
+    display: flex;
+    font-size: 10px;
+    position: absolute;
+    left: 49%;
+    bottom: 3%;
+    /* border: 1px solid red; */
+    gap: 12px;
+}
+
+.points .point {
+    padding: 4px;
+    border: 1px solid #FFE6F4;
+    border-radius: 50%;
+}
+
+/* Book a date wala circle */
+
+.bookContainer{
+    display: block;
+}
+.book-a-date {
+    background-color: #0A153C;
+    position: relative;
+    bottom: 26px;
+    height: 390px;
+}
+
+.book-a-date p {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: carebees-header;
+    font-size: 25px;
+    height: 60px;
+    position: relative;
+    top: 24px;
+}
+
+.line {
+    border: 2px solid #4A7CFE;
+    position: relative;
+    top: 32%;
+}
+
+.circle1 {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #4A7CFE;
+    background-color: #4A7CFE;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 46%;
+}
+
+.circle2 {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #4A7CFE;
+    background-color: #4A7CFE;
+    border-radius: 50%;
+    position: absolute;
+    right: 20%;
+    top: 46%;
+}
+
+.big-circle {
+    width: 180px;
+    height: 180px;
+    border: 1px solid #4A7CFE;
+    border-radius: 50%;
+    background-color: #4A7CFE;
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    box-shadow: 0px 0px 35px 4px #4A7CFE;
+}
+
+.big-circle p {
+    font-family: carebees-header;
+    font-weight: 400;
+}
+
+/* Meet our experts */
+.expert-title p {
+    font-size: 30px;
+    font-family: carebees-fira;
+    color: #fc037f;
+    text-align: center;
+}
+
+.expert-title .line {
+    border: 1.4px solid #4A7CFE;
+    position: relative;
+    bottom: 26px;
+    width: 239px;
+    left: 40.5%;
+}
+
+.expert-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    position: relative;
+}
+
+.expert-card1 {
+    width: 287px;
+    height: 382px;
+    position: relative;
+    left: 5%;
+    background-color: #FFE6F4;
+    border-radius: 146px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.expert-card2 {
+    width: 287px;
+    height: 382px;
+    position: relative;
+    left: 12.5%;
+    background-color: #FFE6F4;
+    border-radius: 146px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.expert-card3 {
+    width: 287px;
+    height: 382px;
+    position: relative;
+    right: -20%;
+    background-color: #FFE6F4;
+    border-radius: 146px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.expert-image {
+    position: absolute;
+}
+
+.expert-image img {
+    width: 182px;
+    height: 182px;
+    position: relative;
+    left: 29%;
+    top: 12px;
+    /* border: 2px solid white;  */
+    border-radius: 50%;
+}
+
+.expert-text {
+    position: absolute;
+    left: 25%;
+    top: 186px;
+    font-family: carebees-fira;
+}
+
+.expert-text .expert-name {
+    text-align: center;
+    font-size: 20px;
+}
+
+.expert-text .social a {
+    padding: 8px 10px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    font-size: 13px;
+    color: #FB0087;
+}
+
+.expert-text .social a:hover {
+    background-color: #FB0087;
+    color: white;
+}
+
+.expert-text p {
+    text-align: center;
+    position: relative;
+    right: 17%;
+    font-family: carebees-fira;
+    font-size: 14px;
+}
+
+.know-more button {
+    position: relative;
+    left: 45.5%;
+    top: 2%;
+    font-family: carebees-header;
+    padding: 2px;
+    background-color: #FB0087;
+    color: white;
+    border-radius: 0.6rem;
+    border: none;
+    width: 92px;
+    height: 36px;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    cursor: pointer;
+}
+
+.know-more button:hover {
+    border: 1px solid #FB0087;
+    border-radius: 0.6rem;
+    background-color: white;
+    color: #FB0087;
+}
+
+/* CSS for customer review */
+.customer-review {
+    background-color: #DDDDDD2B;
+    position: relative;
+    /* border: 2px solid red; */
+    box-shadow: inset 0px 0px 60px -13px #D4E0FF;
+}
+
+.review-title {
+    padding: 0px 0px;
+    position: absolute;
+    transform: translateX(215%);
+}
+
+.review-title p {
+    font-size: 30px;
+    font-family: carebees-fira;
+    color: #fc037f;
+    text-align: center;
+}
+
+.review-title .line {
+    border: 1.4px solid #4A7CFE;
+    position: relative;
+    bottom: 26px;
+    width: 226px;
+    left: 1%;
+}
+
+.review_container {
+    width: 100%;
+    height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: center; */
+    overflow-x: hidden;
+}
+
+
+.clientImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.clientImage span {
+    margin-left: 10px;
+    width: 140px;
+}
+
+
+.reviewSection {
+    transition: all 1s ease;
+    padding: 1rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 12%;
+}
+
+.reviewItem {
+    width: 300px;
+    height: 300px;
+    padding: 16.5px;
+    margin: 2.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #D4E0FF;
+    border: 1px solid #D4E0FF;
+    transition: all .2s linear;
+    color: black;
+    font-family: carebees-fira;
+}
+
+.reviewItem:hover {
+    border-color: #4A7CFE;
+    transform: scale(1.01);
+    /* background-color: #090921; */
+    box-shadow: 0 0px 5px 0px #4A7CFE;
+}
+
+.topsection {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topsection ul {
+    display: flex;
+    list-style: none;
+}
+
+.topsection ul li {
+    padding-left: 4px;
+    color: rgb(188, 136, 6);
+    position: relative;
+    right: 20px;
+}
+
+article p {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.next .fa-arrow-right {
+    position: absolute;
+    top: 52%;
+    right: 1.5%;
+    color: white;
+    font-size: 30px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: #FB0087;
+    box-shadow: 0px 0px 30px #FB0087;
+}
+
+.next .fa-arrow-right:hover {
+    transform: translateX(2px);
+    cursor: pointer;
+}
+
+/*
+=========================================
+            Footer Wrapper Div
+===========================================
+*/
+
+/* .FooterWrapper {
+    border: 2px solid red !important;
+    margin-top: 27%;
+} */
+
+/* Navbar Wrapper */
+.navWrapper {
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+
+/*
+======================================
+        contact Wrapper
+======================================
+*/
+
+
+.contactWrapper{
+    height: 450px;
+    /* border: 2px solid red; */
+}
+
+
+
+
+/* 
+############################################
+Media Query starts here.......
+############################################
+*/
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .container .frame{
+        height: auto;
+    }
+    .container .bottom{
+        margin-top: 72px;
+    }
+    #whyus{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;
+        position: absolute;
+        top: 286px;
+    }
+    #whyus .allSection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #whyus .underline1{
+        top: -30px;
+        left: 97px;
+    }
+    #why_us{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid green;
+        position: relative;
+        top: 950px;
+        z-index: 1;
+    }
+    #why_us .underline2{
+        top: -28px;
+        left: 120px;
+    }
+    .sec-1and2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .allIndex{
+        height: 2430px;
+        border: 4px solid yellow;
+    }
+    .bookContainer .book-a-date .circle1{
+        position: absolute;
+        left: 27px;
+    }
+    .bookContainer .book-a-date .big-circle{
+        left: 27%;
+    }
+    .bookContainer .book-a-date .circle2{
+        right: 7%;
+    }
+
+    .expert-title .line{
+        left: 19%;
+    }
+
+    .expert-card{
+        align-items: center;
+        gap: 40px;
+    }
+    .expert-card1{
+        left: 0%;
+    }
+    .expert-card2{
+        left: 0%;
+    }
+    .expert-card3{
+        left: 0%;
+    }
+    .know-more button{
+        left: 37%;
+    }
+}
+
+
+/* @media screen and (max-width:700px) {
+    .container {
+        height: auto;
+    }
+
+    .description {
+        width: 90%;
+    }
+} */

@@ -8,10 +8,10 @@
         
       
       // Connecting to the Database
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $database = "contacts";
+      $servername = "sql103.epizy.com";
+      $username = "epiz_28842284";
+      $password = "jPMNR6AvHa";
+      $database = "epiz_28842284_contacts";
 
       // Create a connection
       $conn = mysqli_connect($servername, $username, $password, $database);
@@ -50,11 +50,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-    +0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+     <link rel="icon" type="image/x-icon" href="img/logo_vw.ico">
     <title>Contact Us</title>
+    <style>
+        body{
+             background: url("img/customer-service.jpg") no-repeat center center/cover;
+            }
+    </style>
   </head>
-  <body background ="img/customer-service.jpg">
+  <body>
 <?php   require "partial/dbconnect.php"?>
   <?php require "partial/nevber.php"?>
 
@@ -82,7 +87,7 @@ if ($submit_error) {
     <br>
     <div class="contener" style=" display: flex; flex-direction: column; align-items: center;">
     
-    <form action ="/forums/contact.php" method="post" >
+    <form action ="/contact.php" method="post" >
   <div class="form-grup col-md-20">
     <label for="name" class="form-label">Name</label>
     <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp"  placeholder="Name">
@@ -104,7 +109,7 @@ if ($submit_error) {
     
     
     </div>
-<br>
+<br><br><br><br><br>
 <?php require "partial/footer.php" ?>
     <!-- Optional JavaScript; choose one of the two! -->
 

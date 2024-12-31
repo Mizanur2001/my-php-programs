@@ -1,0 +1,35 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Cotainer Section */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+    color: black;
+    height: 650px;
+}
+#container::before{
+    content: "";
+    background: url("../img/ud_cons.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 750px;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+/* imge section */
+
+#img{
+    height: 200px;
+}

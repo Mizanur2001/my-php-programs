@@ -1,0 +1,172 @@
+@font-face {
+    font-family: carebees-header;
+    src: url('../fontstyle/Inder-Regular.ttf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.footer {
+    background-color: #1C2348;
+    padding: 18px 8px;
+}
+
+.up {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.up1 .line {
+    border: 1.4px solid #FB0087;
+    width: 95px;
+    position: absolute;
+    left: 34%;
+    top: 0%;
+}
+
+.up2 .line {
+    border: 1.4px solid #FB0087;
+    width: 145px;
+    position: absolute;
+    left: 22%;
+    top: 0%;
+}
+
+.up3 .line {
+    border: 1.4px solid #FB0087;
+    width: 88px;
+    position: absolute;
+    left: 27%;
+    top: 0%;
+}
+
+.up4 .line {
+    border: 1.4px solid #FB0087;
+    width: 208px;
+    position: absolute;
+    left: 8%;
+    top: 0%;
+}
+
+.upper {
+    position: relative;
+    top: 25px;
+    font-family: carebees-header;
+    font-size: 17px;
+}
+
+.upper a {
+    text-decoration: none;
+    color: white;
+    font-family: carebees-header;
+}
+
+.upper ul li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.upper span {
+    color: white;
+    font-family: carebees-header;
+}
+
+.down {
+    color: white;
+    font-family: carebees-header;
+    font-size: 13px; 
+    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.down .company{
+    position: relative;
+    left: 27%;
+}
+.down .team{
+    position: relative;
+    left: 32%;
+}
+
+.upper .linked-face {
+    padding: 10px 60px;
+    margin-top: 20px;
+}
+
+.upper .insta-x {
+    padding: 10px 60px;
+}
+
+.upper .linked-face a {
+    font-family: carebees-header;
+    font-size: 35px;
+}
+
+.upper .linked-face .fa-linkedin-in {
+    text-align: center;
+    padding: 5px 5px;
+    color: #4A7CFE;
+}
+
+.upper .linked-face .fa-facebook-f {
+    text-align: center;
+    padding: 4px 10px;
+    background-color: white;
+    color: #1C2348;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.upper .insta-x a {
+    font-family: carebees-header;
+    font-size: 35px;
+}
+
+.upper .insta-x .fa-instagram {
+    text-align: center;
+    padding: 5px 5px;
+    background: -webkit-linear-gradient(180deg, #f9ce34 0%, #ee2a7b 49%, #6228d7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.upper .insta-x .fa-x-twitter {
+    text-align: center;
+    padding: 5px 5px;
+    color: black;
+}
+
+.up4 span {
+    padding: 15px 25px;
+    position: relative;
+    top: 10%;
+}
+
+.up4 .googleMap {
+    padding: 10px 25px;
+    position: relative;
+    top: 12%;
+}
+
+.up1 {
+    position: relative;
+    left: 6%;
+}
+
+.up2 {
+    position: relative;
+    left: 17%;
+}
+
+.up3 {
+    position: relative;
+    left: 26%;
+}
+
+.up4 {
+    position: relative;
+    right: -33%;
+}

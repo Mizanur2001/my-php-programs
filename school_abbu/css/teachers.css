@@ -1,0 +1,43 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* container section */
+
+#container{
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    margin: 30px;
+}
+.box{
+    display: grid;
+    justify-content: center;
+    border: 3px solid brown;
+    background-color: rgb(226 195 225 / 16%);
+    height: 280px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    border: 1px solid black;
+    padding: 15px;
+    margin-right: 43px;
+    border-radius: 20px;
+    background: #ca3939;
+    font-size: 17px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Bree Serif', serif;
+}
+/* for Class teacher box*/
+
+div#classteacher {
+    background-color: #e4d6e2;
+}

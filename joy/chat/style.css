@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.logo img{
+    width: 150px;
+    height: 100px;
+}
+
+.cointainer{
+    max-width: 955px;
+    border-radius: 13px;
+    margin: auto;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+}
+
+.time {
+    font-size: 9px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.message-right{
+    color: white;
+    float: right;
+    clear: both;
+    font-size: 18px;
+    padding: 0 10px;
+    padding-top: 10px;
+    margin: 2px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: #8d21b8;
+    max-width: 42%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.message-left{
+    color: white;
+    float: left;
+    clear: both;
+    font-size: 18px;
+    padding: 0 10px;
+    padding-top: 10px;
+    margin: 2px;
+    border-radius: 15px;
+    border: 2px solid black;
+    max-width: 42%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient( violet , transparent);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent , rgb(24, 190, 66));
+}
+
+#message{
+    padding-bottom: 10px;
+    width: 70%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    border-bottom: 3px solid violet;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.btn{
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 40px;
+    background-color: #8d21b8;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: whitesmoke;
+    box-shadow: 1px 4px 10px violet;
+    background: none;
+    font-family: 'Ubuntu', sans-serif;
+}

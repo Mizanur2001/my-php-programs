@@ -1,0 +1,113 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*h1 for subject before container*/
+
+#h-sub{
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+}
+
+/* container section */
+
+#container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    margin: 30px;
+}
+
+/* Input Section */
+
+#input-box{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid brown;
+    height: 351px;
+    font-family: 'Bree Serif', serif;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    border-radius: 25px;
+}
+
+#input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+    margin-left: 41px;
+
+}
+#input label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem; 
+}
+#input input {
+    width: 77%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: #ca3939;
+    font-size: 17px;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+}
+/* Table section */
+
+table#myTable {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#table table{
+    border: 2px solid black;
+}
+
+#table th,tr,td{
+    border: 2px solid black;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 8px 10px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.t-btn{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ca3939;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+
+}
+
+/*utility classes*/
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding: 4px;
+   /* margin-bottom: 20px;*/
+}
+.mb{
+    margin-bottom: 25px;
+}

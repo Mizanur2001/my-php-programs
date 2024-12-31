@@ -1,0 +1,54 @@
+/*CSS reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*Hyperlink & Heading section*/
+
+.heading{
+    display: flex;
+
+}
+
+.hyperlinks a{
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 0px 10px;
+    color: #29c129;
+}
+.hyperlinks {
+    padding: 0px 0px 0px 15px;
+}
+    
+/* container & box */ 
+
+#container{
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    margin: 30px;
+}
+.box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid brown;
+    background-color: rgb(226 195 225 / 16%);
+    height: 280px;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: 'Bree Serif', serif;
+}
+
+.box img{
+    height: 225px;
+    width: 271px;
+}
+.heading{
+    text-align: center;
+    padding-top: 15px;
+}

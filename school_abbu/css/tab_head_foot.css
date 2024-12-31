@@ -1,0 +1,24 @@
+/* Navbar Section (When weight is :- 780)*/
+
+#navbar {
+    flex-direction: column;
+}
+#logo img{
+    height: 65px;
+}
+#navbar ul li a {
+    margin: 25px;
+    font-size: 18px;
+}
+/*Footer Section */
+
+.crihgt {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+     margin-right: 0px; 
+    margin-top: 20px;
+}
